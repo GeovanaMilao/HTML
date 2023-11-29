@@ -1,1 +1,24 @@
-v
+<!DOCTYPEhtml>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title> sobre isso </title> 
+        <link rel = "icon" HREF = "giphy.gif" = image-icon>
+            <style>
+                body {
+                    font-family: Helvetica;
+                    font-size: 30px;
+                }
+            </style
+    </head> 
+    <body bgcolor = black> 
+        <h1 style = "color:white">Meus sentimentos sobre...</h1>
+        <p style = "color:white"> 
+           A real razão de ter esse sentimento eu não sei, creio que a escola seja um pouco culpada   <br>
+           O fato que me faz pensar nisso e meio dificil afinal, O que devo pensar esta tudo me deixando maluca.
+           O meu futuro e algo tão confuso quando uma conta com baskara
+        </p>
+         <a href="Meus-sinceros-sentimentos.html" target="blank">Meus sinceros sentimentos sobre...
+    </body>
+</html>
