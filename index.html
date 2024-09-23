@@ -3,23 +3,30 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial scale=1.0">
-        <title> Meu Projeto De Vida </title> 
-        <link rel = "icon" HREF = "giphy.gif" = image-icon>
-            <style>
-                body {
-                    font-family: Helvetica;
-                    font-size: 30px;
-                }
-            </style
+        <title> missão nomes aleatorios </title> 
     </head> 
     <body>
-        <h1 style = "color:Green"> Meus objetivos </h1>
-        <p style = "color:Green"> 
-            Meu maior objetivo no momento, é terminar o ensino médio 
-            quero cursar biologia e ser bióloga marinha futuramente 
-            mas no Brasil a profissão é desvalorizada, então eu queria viajar
-            e morar em outro país
-            
-            </p>
+     const nomes = [“Ana”, “Fernanda”, “Maria Eduarda”,
+“Marcelo”, “Amanda”, “Gustavo”, “Gabriel”];
+      export function aleatorio (lista){
+const posicao = Math.floor(Math.random()* lista.length);
+return lista[posicao];
+        export const nome = aleatorio(nomes);
+        import { aleatorio, nome } from ‘./aleatorio.js’;
+        function mostraResultado() {
+caixaPerguntas.textContent = `Em 2049, ${nome}`;
+        function substituiNome() {
+for (const pergunta of perguntas) {
+pergunta.enunciado = pergunta.enunciado.replace(/você/g,
+nome);
+}
+}function substituiNome() {
+for (const pergunta of perguntas) {
+pergunta.enunciado = pergunta.enunciado.replace(/você/g,
+nome);
+}
+}
+substituiNome();
+mostraPergunta();
     </body>
 </html>
