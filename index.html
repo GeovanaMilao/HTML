@@ -1,35 +1,40 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rosa de Hiroshima - Vinícius de Moraes</title>
-</head>
-<body>
-    <h1>Rosa de Hiroshima</h1>
-    <p><strong>Pensem nas crianças</strong><br>
-    Mudas, telepáticas</p>
-    
-    <p><strong>Pensem nas meninas</strong><br>
-    Cegas, inexatas</p>
-    
-    <p><strong>Pensem nas mulheres</strong><br>
-    Rotas, alteradas</p>
-    
-    <p><strong>Pensem nas feridas</strong><br>
-    Como rosas cálidas</p>
-    
-    <p>Mas oh não se esqueçam<br>
-    Da rosa, da rosa<br>
-    Da rosa de Hiroshima</p>
-    
-    <p>A rosa hereditária<br>
-    A rosa radioativa<br>
-    Estúpida e inválida<br>
-    A rosa com cirrose<br>
-    A anti-rosa atômica</p>
-    
-    <p>Sem cor, sem perfume<br>
-    Sem rosa, sem nada.</p>
-</body>
-</html>
+<DOCTYPE html> <html lang="pt-br"> <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Calculadora de Média Aritmética</title>
+<style>
+body {
+font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4;
+} .container {
+max-width: 400px;
+margin: 0 auto;
+background: white;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input, button {
+width: 100%;
+padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px;
+} button {
+background-color: #007BFF; color: white;
+cursor: pointer;
+} button:hover {
+background-color: #0056b3; }
+.result { font-weight: bold; text-align: center;
+} </style>
+</head> <body>
+<div class="container"> <h2>Calculadora de Média</h2> <form id="mediaForm">
+<label for="física">Nota de Física:</label>
+<input type="number" id="fisica" value="40" step="0.1" required>
+
+ <label for="história">Nota de História:</label>
+<input type="number" id="historia" value="70" step="0.1" required>
+<button type="button" onclick="calcularMedia()">Calcular Média</button> </form>
+<div class="result" id="resultado"></div> </div>
+<script>
+function calcularMedia() {
+const física = parseFloat(document.getElementById('física').value); const historia = parseFloat(document.getElementById('historia').value);
+const média = (física + história) / 2;
+document.getElementById('resultado').innerText = `A média é: ,{media.toFixed(2)}`;
+} </script>
+</body> </html>
